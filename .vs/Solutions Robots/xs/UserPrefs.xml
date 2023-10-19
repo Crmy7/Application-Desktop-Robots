@@ -1,4 +1,4 @@
-﻿<Properties StartupConfiguration="{7EBF3AA9-12A3-423C-96C5-7B9C136A4CBD}|Default">
+﻿<Properties StartupConfiguration="{7EBF3AA9-12A3-423C-96C5-7B9C136A4CBD}|Default" GitUserInfo="UsingMD">
   <MonoDevelop.Ide.ItemProperties.Robots FirstBuild="True" />
   <MonoDevelop.Ide.ItemProperties.Robots.Console PreferredExecutionTarget="MonoDevelop.Default" FirstBuild="True" />
   <MultiItemStartupConfigurations />
