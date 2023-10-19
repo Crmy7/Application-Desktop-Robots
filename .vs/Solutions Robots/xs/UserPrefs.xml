@@ -1,5 +1,32 @@
 ﻿<Properties StartupConfiguration="{7EBF3AA9-12A3-423C-96C5-7B9C136A4CBD}|Default" GitUserInfo="UsingMD">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Robots/Class1.cs">
+    <Files>
+      <File FileName="Robots.Console/Program.cs" Line="1" Column="1" />
+      <File FileName="Robots/Class1.cs" Line="10" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Solutions Robots">
+            <Node name="Robots" expanded="True">
+              <Node name="Class1.cs" selected="True" />
+            </Node>
+            <Node name="Robots.Console" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="ProjectDependencies" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.Robots FirstBuild="True" />
   <MonoDevelop.Ide.ItemProperties.Robots.Console PreferredExecutionTarget="MonoDevelop.Default" FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>
