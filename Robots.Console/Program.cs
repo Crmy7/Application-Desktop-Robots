@@ -4,10 +4,10 @@ using Robots;
 Console.WriteLine("Hello, World!");
 
 
-Robot robot = new Robot("R2D2", 0, 0);
+Robot robot = new Robot("R2D2" Point);
 Console.WriteLine(robot.AfficherPosition());
 
-RobotMobile robotMobile = new RobotMobile("R2D2", 0, 0, 10);
+RobotMobile robotMobile = new RobotMobile("R2D2", Point Positon, 10) ;
 robotMobile.Avancer(10, 10);
 Console.WriteLine($"ma vitesse est de {robotMobile.CalculerDuréeDeDéplacement(20, 20)}");
 Console.WriteLine(robotMobile.AfficherPosition());
