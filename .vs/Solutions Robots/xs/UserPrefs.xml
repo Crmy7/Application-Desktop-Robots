@@ -1,32 +1,30 @@
 ﻿<Properties StartupConfiguration="{7EBF3AA9-12A3-423C-96C5-7B9C136A4CBD}|Default" GitUserInfo="UsingMD">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Robots/Class1.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Robots.Console PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Robots.Console/Program.cs">
     <Files>
-      <File FileName="Robots.Console/Program.cs" Line="1" Column="1" />
-      <File FileName="Robots/Class1.cs" Line="10" Column="1" />
+      <File FileName="Robots.Console/Program.cs" Line="13" Column="21" />
+      <File FileName="Robots/Robot.cs" />
+      <File FileName="Robots/RobotAbstrait.cs" />
+      <File FileName="Robots/IRobotNettoyage.cs" />
+      <File FileName="Robots/RobotMobile.cs" />
+      <File FileName="Robots/Utils.cs" />
+      <File FileName="Robots/Point.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Solutions Robots">
-            <Node name="Robots" expanded="True">
-              <Node name="Class1.cs" selected="True" />
-            </Node>
-            <Node name="Robots.Console" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="ProjectDependencies" expanded="True" />
-              </Node>
-            </Node>
+            <Node name="Robots" expanded="True" />
+            <Node name="Robots.Console" expanded="True" />
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Robots FirstBuild="True" />
-  <MonoDevelop.Ide.ItemProperties.Robots.Console PreferredExecutionTarget="MonoDevelop.Default" FirstBuild="True" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
 </Properties>
