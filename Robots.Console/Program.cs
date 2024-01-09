@@ -278,28 +278,36 @@ foreach (var robot3 in robotsList3)
 }
 
 // Utiliser LINQ pour récupérer tous les robots dont l'année de construction est supérieure à 2005
-var robots3After2005 = robotsList3.Where(robot => robot.Year > 2005).ToList();
+var robots3After2005 = robotsList3.Where(robot3 => robot3.Year > 2005).ToList();
 
 // Utiliser LINQ pour trier les robots par leur année de construction, de la plus ancienne à la plus récente
-var sorted3Robots = robotsList3.OrderBy(robot => robot.Year).ToList();
+var sorted3Robots = robotsList3.OrderBy(robot3 => robot3.Year).ToList();
 
 // Utiliser LINQ pour trouver le robot le plus ancien
-var oldest3Robot = robotsList3.OrderBy(robot => robot.Year).FirstOrDefault();
+var oldest3Robot = robotsList3.OrderBy(robot3 => robot3.Year).FirstOrDefault();
 
 // Afficher les résultats dans la console
 Console.WriteLine("Robots dont l'année de construction est supérieure à 2005:");
+
+//Utilisez LINQ pour récupérer tous les robots dont l'année de construction est supérieure à 2005.
+
 foreach (var robot3 in robots3After2005)
 {
     Console.WriteLine($"Robot Name: {robot3.Name}, Year: {robot3.Year}");
 }
 
 Console.WriteLine("\nRobots triés par année de construction (de la plus ancienne à la plus récente):");
+
+//Utilisez LINQ pour trouver le robot le plus ancien.
+
 foreach (var robot3 in sorted3Robots)
 {
     Console.WriteLine($"Robot Name: {robot3.Name}, Year: {robot3.Year}");
 }
 
 Console.WriteLine($"\nLe robot le plus ancien est : {oldest3Robot.Name}, Année : {oldest3Robot.Year}");
+
+//Utilisez LINQ pour calculer la distance entre chaque robot et un point (0, 0). La distance entre deux points (x1, y1) et (x2, y2) est calculée avec la formule suivante :
 
 var distances = robotsList3.Select(r => Math.Sqrt(Math.Pow(r.X, 2) + Math.Pow(r.Y, 2))).ToList();
 
@@ -309,4 +317,52 @@ foreach (var distance in distances)
     Console.WriteLine(distance.ToString("F2"));
 }
 
+//Utilisez LINQ pour trouver le robot le plus proche du point (0, 0).
+var closestRobot = robotsList3
+    .Skip(1)
+    .OrderBy(r => Math.Sqrt(Math.Pow(r.X, 2) + Math.Pow(r.Y, 2)))
+    .FirstOrDefault();
 
+Console.WriteLine($"\nLe robot le plus proche du point (0, 0) (en excluant le premier robot) est {(closestRobot != null ? $"{closestRobot.Name} avec une distance de {Math.Sqrt(Math.Pow(closestRobot.X, 2) + Math.Pow(closestRobot.Y, 2)):F2}" : "Aucun robot dans la liste.")}");
+
+// Utilisez LINQ pour regrouper les robots par année de construction.
+var groupByYear = robotsList3.GroupBy(r => r.Year).ToList();
+
+foreach (var group in groupByYear)
+{
+    Console.WriteLine($"Les robots construits en {group.Key} sont :");
+
+    foreach (var robot3 in group)
+    {
+        Console.WriteLine(robot3.ToString());
+    }
+}
+
+
+Console.WriteLine("Utilisez LINQ pour calculer le nombre de robots construits chaque année.");
+var groupByYearCount = robotsList3.GroupBy(r => r.Year).Select(r => new { Year = r.Key, Count = r.Count() }).ToList();
+foreach (var group in groupByYearCount)
+{
+    Console.WriteLine($"Il y a {group.Count} robots construits en {group.Year}");
+}
+
+Console.WriteLine("Utilisez LINQ pour récupérer les 3 premiers robots construits avant 2010.");
+var robotBefore2010 = robotsList3.Where(r => r.Year < 2010).Take(3).ToList();
+foreach (var robot3 in robotBefore2010)
+{
+    Console.WriteLine(robot3.ToString());
+}
+
+Console.WriteLine("Utilisez LINQ pour récupérer les robots dont le nom contient la lettre 'o' et dont l'année de construction est supérieure à 2005.");
+var robotNameO = robotsList3.Where(r => r.Name.Contains("o") && r.Year > 2005).ToList();
+foreach (var robot3 in robotNameO)
+{
+    Console.WriteLine(robot3.ToString());
+}
+
+Console.WriteLine("Utilisez LINQ pour calculer la moyenne des années de construction des robots.");
+var robotYearAverage = robotsList3.Average(r => r.Year);
+Console.WriteLine($"La moyenne des années de construction des robots est de {robotYearAverage:F2}");
+
+var robotYearMax = robotsList3.Max(r => r.Year);
+Console.WriteLine($"L'année de construction du robot le plus récent est de {robotYearMax}");

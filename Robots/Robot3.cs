@@ -17,6 +17,10 @@ namespace Robots3
 			Y = y;
 		}
 
+		 public override string ToString()
+		{
+			return $"Robot Name: {Name}, Year: {Year}, Position: ({X}, {Y})";
+		}
 
 	}
 }
