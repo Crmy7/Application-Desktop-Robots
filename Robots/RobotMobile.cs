@@ -12,8 +12,8 @@ namespace Robots
         public RobotMobile(string name, Point position, int vitesse) : base(name, position)
         {
             Vitesse = vitesse;
-
         }
+
 
         public int CalculerDuréeDeDéplacement(int posX, int posY)
         {

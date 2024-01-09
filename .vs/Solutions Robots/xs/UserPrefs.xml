@@ -1,29 +1,31 @@
 ﻿<Properties StartupConfiguration="{7EBF3AA9-12A3-423C-96C5-7B9C136A4CBD}|Default" GitUserInfo="UsingMD">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.Robots.Console PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workbench ActiveDocument="Robots.Console/Program.cs">
     <Files>
-      <File FileName="Robots.Console/Program.cs" Line="13" Column="21" />
-      <File FileName="Robots/Robot.cs" />
-      <File FileName="Robots/RobotAbstrait.cs" />
-      <File FileName="Robots/IRobotNettoyage.cs" />
-      <File FileName="Robots/RobotMobile.cs" />
-      <File FileName="Robots/Utils.cs" />
-      <File FileName="Robots/Point.cs" />
+      <File FileName="Robots/Robot.cs" Line="8" Column="40" />
+      <File FileName="Robots/RobotAbstrait.cs" Line="17" Column="2" />
+      <File FileName="Robots/IRobotNettoyage.cs" Line="8" Column="2" />
+      <File FileName="Robots/RobotMobile.cs" Line="24" Column="10" />
+      <File FileName="Robots/Utils.cs" Line="13" Column="31" />
+      <File FileName="Robots/Point.cs" Line="20" Column="35" />
+      <File FileName="Robots.Console/Program.cs" Line="98" Column="95" />
+      <File FileName="Robots/Robot2.cs" Line="2" Column="18" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Solutions Robots">
-            <Node name="Robots" expanded="True" />
-            <Node name="Robots.Console" expanded="True" />
+            <Node name="Robots.Console">
+              <Node name="Program.cs" selected="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
